@@ -6,26 +6,37 @@
 
 <table class="table table-bordered">
     <tr>
-        <th>#</th>
-        <th>Personel Adı</th>
-        <th>Personel Soyadı</th>
-        <th>Personel Maili</th>
-        <th>Personel Şehri</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
+    <tr>
+        <th style=" text-align: center; vertical-align: middle; ">#</th>
+        <th style=" text-align: center; vertical-align: middle; ">Görsel</th>
+        <th style=" text-align: center; vertical-align: middle; ">Personel Adı Soyadı</th>
+        <th style=" text-align: center; vertical-align: middle; ">Durumu</th>
+        <th style=" text-align: center; vertical-align: middle; ">Sil</th>
+        <th style=" text-align: center; vertical-align: middle; ">Güncelle</th>
+    </tr>
     </tr>
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.EmployeeID</td>
-            <td>@item.EmployeeName</td>
-            <td>@item.EmployeeSurname</td>
-            <td>@item.EmployeeMail</td>
-            <td>@item.EmployeeCity</td>
-            <td><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-outline-success">Güncelle</a></td>
+            <td style=" text-align: center; vertical-align: middle;">@item.EmployeeID</td>
+            <td style=" text-align: center; vertical-align: middle;"><img src="@item.EmployeeImage" style="width: 100px; height: 100px; border-radius: 50%;" /></td>
+            <td style=" text-align: center; vertical-align: middle;">@item.EmployeeName @item.EmployeeSurname</td>
+            <td style=" text-align: center; vertical-align: middle;">
+                <a @if (item.EmployeeStatus)
+               {
+    <span class="badge badge-pill badge-success"></span>
+}
+else
+{
+    <span class="badge badge-pill badge-danger"></span>
+}>@item.EmployeeStatus</a>
+            </td>
+            <td style=" text-align: center; vertical-align: middle;"><a href="/Employee/DeleteEmployee/@item.EmployeeID" class="btn btn-danger">Sil</a></td>
+            <td style=" text-align: center; vertical-align: middle;"><a href="/Employee/UpdateEmployee/@item.EmployeeID" class="btn btn-success">Güncelle</a></td>
         </tr>
     }
 </table>
 <a href="/Employee/AddEmployee/" class="btn btn-primary">Yeni Personel Girişi</a>
+
+
 

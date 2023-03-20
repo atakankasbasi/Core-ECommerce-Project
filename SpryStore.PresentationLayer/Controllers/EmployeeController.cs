@@ -26,13 +26,15 @@ namespace SpryStore.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult AddEmployee(Employee employee)
         {
+            employee.EmployeeStatus = true;
             _employeeService.TInsert(employee);
             return RedirectToAction("Index");
         }
         public IActionResult DeleteEmployee(int id)
         {
             var value = _employeeService.TGetByID(id);
-            _employeeService.TDelete(value);
+            value.EmployeeStatus = false;
+            _employeeService.TUpdate(value);
             return RedirectToAction("Index");
         }
         [HttpGet]
