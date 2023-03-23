@@ -1,5 +1,6 @@
 ﻿using SpryStore.BusinessLayer.Abstract;
 using SpryStore.DataAccessLayer.Abstract;
+using SpryStore.DataAccessLayer.Concrete;
 using SpryStore.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,11 @@ namespace SpryStore.BusinessLayer.Concrete
 		{
 			return _productDal.GetList();
 		}
+
+		public List<Product> TGetProductListWithCategory()
+		{
+			return _productDal.GetProductListWithCategory();
+        }
 
 		public void TInsert(Product t)
 		{
