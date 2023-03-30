@@ -35,5 +35,6 @@ namespace SpryStore.PresentationLayer.Areas.Catalog.Controllers
             var values = _employeeService.TGetList();
             return PartialView(values);
         }
+
     }
 }
