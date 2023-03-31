@@ -1,4 +1,6 @@
-﻿namespace SpryStore.PresentationLayer.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SpryStore.PresentationLayer.Models
 {
     public class RegisterViewModel
     {

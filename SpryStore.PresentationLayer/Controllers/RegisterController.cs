@@ -37,6 +37,10 @@ namespace SpryStore.PresentationLayer.Controllers
             }
             else
             {
+                foreach(var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
                 return View();
             }
         }
