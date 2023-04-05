@@ -6,6 +6,7 @@ namespace SpryStore.PresentationLayer.Controllers
 {
     public class AdminLayoutController : Controller
     {
+        //idlhitzwiogthyvi mail işlemlerinde kullanılacak key
         public IActionResult Index()
         {
             Random rnd = new Random();
