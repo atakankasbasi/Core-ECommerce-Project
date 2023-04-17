@@ -23,7 +23,6 @@ A .NET Core E-Commerce project, which users can register, sign in, users can mes
 ![1](https://user-images.githubusercontent.com/116946800/232212554-1be490a2-be56-476d-a562-b82c06cf1c1e.png)
 ![2](https://user-images.githubusercontent.com/116946800/232212581-ed56b5c9-8740-49d6-bed5-506aac9c1a29.png)
 ![3](https://user-images.githubusercontent.com/116946800/232212594-37a95c37-83db-429c-afab-22e3b550e535.png)
-![5](https://user-images.githubusercontent.com/116946800/232212626-120a91b5-87be-45d4-8e5b-9ce3939900b2.png)
 ![6](https://user-images.githubusercontent.com/116946800/232212631-f2c47c3d-eb4f-454f-b02f-a729bb4c6231.png)
 ![7](https://user-images.githubusercontent.com/116946800/232212645-b1a838ab-ad75-421b-bffe-50ea27bffdc5.png)
 ![8](https://user-images.githubusercontent.com/116946800/232212651-a9767612-ae2a-473e-be55-01df2a21ad88.png)
